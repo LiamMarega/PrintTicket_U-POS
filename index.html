@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=700, initial-scale=1.0" />
+    <title>Ticket</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container {
+        width: 50vw;
+        min-width: 375px;
+
+        font-family: 'Montserrat', sans-serif;
+        padding: 4%;
+        text-align: start;
+      }
+
+      .end {
+        text-align: end;
+      }
+
+      .start {
+        text-align: start;
+      }
+
+      .strong {
+        font-weight: 700;
+      }
+
+      .flexSpace {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .flexStart {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .flexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      header h2 {
+        font-weight: 500;
+      }
+      header img {
+        margin-right: 5%;
+      }
+
+      .informationStore p {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      .informationStore p {
+        width: 85%;
+        font-size: 85%;
+      }
+
+      .containerTable th {
+        text-align: start;
+        width: 65%;
+      }
+      .containerTable td {
+        text-align: center;
+      }
+      .containerTable tr {
+        line-height: 180%;
+      }
+      .containerTable tr:nth-child(3) {
+        text-align: end;
+      }
+      .containerTable #Item {
+        text-align: start;
+      }
+      .containerTable .productName {
+        text-align: start;
+      }
+      .containerTable .productPrice {
+        text-align: end;
+      }
+
+      .containerTotals tr {
+        line-height: 25px;
+      }
+      .clientInfo {
+        margin: 10% 0;
+      }
+
+      .hrPointer {
+        margin: 5% 0;
+        border-top: 1px dotted grey;
+      }
+
+      .footer {
+        margin-top: 15%;
+        font-size: 85%;
+      }
+
+      .footer tr td {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .firstItems {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <section>
+        <header>
+          <div class="logo">
+            <img src="https://i.postimg.cc/sg2M4PRr/Group-1.png" alt="logo" />
+            <h2>Bistro Restaurant</h2>
+          </div>
+          <div class="informationStore flexStart">
+            <p>227 Union Street, Lynn, MA. 01902, 0911298763</p>
+          </div>
+          <div class="DateInStore flexBetween">
+            <p>AUG 28, 2022. 09:10:32 AM.</p>
+            <h4>IN STORE</h4>
+          </div>
+          <h2>Receipt</h2>
+        </header>
+      </section>
+      <!-- Prices -->
+      <section>
+        <div class="containerTable">
+          <table valign="top" width="100%">
+            <tbody>
+              <tr class="firstItems">
+                <td id="Item">Item</td>
+                <td>Qty</td>
+                <td class="productPrice">Subtotal</td>
+              </tr>
+              <div class="containerProduct">
+                <tr>
+                  <th class="productName">Special lorem ipsum hamburger</th>
+                  <td>1</td>
+                  <td class="productPrice strong">$8.00</td>
+                </tr>
+                <tr>
+                  <td class="productName">Addition bacon</td>
+                  <td></td>
+                  <td class="productPrice">1.00</td>
+                </tr>
+                <tr>
+                  <td class="productName">Addition cheese</td>
+                  <td></td>
+                  <td class="productPrice">1.00</td>
+                </tr>
+              </div>
+              <div class="containerProduct">
+                <tr>
+                  <th class="productName">Chicken kebab plate</th>
+                  <td>2</td>
+                  <td class="productPrice strong">$19.00</td>
+                </tr>
+                <tr>
+                  <td class="productName">Addition cheese</td>
+                  <td></td>
+                  <td class="productPrice">2.00</td>
+                </tr>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <hr />
+      <!-- Totals -->
+      <section>
+        <div class="containerTotals">
+          <table valign="top" width="100%">
+            <tbody>
+              <tr>
+                <td>Subtotal</td>
+                <td class="end">$47.20</td>
+              </tr>
+              <tr>
+                <td>Tax</td>
+                <td class="end">$47.20</td>
+              </tr>
+              <tr>
+                <td>Tip:</td>
+                <td class="end">$47.20</td>
+              </tr>
+              <tr>
+                <th class="start">Total</th>
+                <th class="end">$47.20</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Client information -->
+      <section>
+        <hr class="hrPointer" />
+        <div class="clientInfo">
+          <table valign="top" width="100%">
+            <tbody>
+              <tr>
+                <td>Luis Diaz Pernia</td>
+                <td class="end">Auth code: 181884</td>
+              </tr>
+              <tr>
+                <td>
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 34 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5966 2.64066H12.4034V19.162H21.5966V2.64066Z"
+                      fill="#FF5F00"
+                    />
+                    <path
+                      d="M12.9871 10.8999C12.9871 7.54949 14.5573 4.56391 17 2.64064C15.2139 1.23395 12.9579 0.393433 10.5064 0.393433C4.70455 0.393433 0 5.09798 0 10.8999C0 16.7018 4.70455 21.4063 10.5064 21.4063C12.9579 21.4063 15.211 20.5658 17 19.1591C14.5573 17.2358 12.9871 14.2503 12.9871 10.8999Z"
+                      fill="#EB001B"
+                    />
+                    <path
+                      d="M34 10.8999C34 16.7018 29.2955 21.4063 23.4936 21.4063C21.0421 21.4063 18.789 20.5658 17 19.1591C19.4427 17.2358 21.0129 14.2503 21.0129 10.8999C21.0129 7.54949 19.4427 4.56391 17 2.64064C18.7861 1.23395 21.0421 0.393433 23.4936 0.393433C29.2955 0.393433 34 5.09798 34 10.8999Z"
+                      fill="#F79E1B"
+                    />
+                    <path
+                      d="M32.996 17.4109V17.0724H33.1332V17.0023H32.7859V17.0724H32.9231V17.4109H32.996ZM33.6702 17.4109V17.0023H33.5651L33.4425 17.2825L33.32 17.0023H33.212V17.4109H33.2879V17.1045L33.4017 17.3701H33.4805L33.5943 17.1045V17.4139H33.6702V17.4109Z"
+                      fill="#F79E1B"
+                    />
+                  </svg>
+                </td>
+                <td class="end">#LP9E</td>
+              </tr>
+
+              <tr>
+                <td class="start">•••• •••• •••• 1234</td>
+                <th class="end"></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="AID">
+          <table valign="top" width="100%">
+            <tbody>
+              <tr>
+                <td>AID: A0000000980840</td>
+              </tr>
+              <tr>
+                <td class="start">No CVM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section>
+        <div class="footer">
+          <table valign="top" width="100%">
+            <tbody>
+              <tr>
+                <td>Not your receipt?</td>
+                <td class="end">Manage preferences</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            © 2022 Universum Restaurant POS. 1455 Market Street, Suite 600, San
+            Francisco, CA 94103.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
