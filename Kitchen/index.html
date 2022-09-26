@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=700, initial-scale=1.0" />
+    <title>Ticket</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      * {
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+      }
+      .container {
+        width: 35vw;
+        min-width: 375px;
+
+        font-family: 'Montserrat', sans-serif;
+        padding: 4%;
+        padding-bottom: 12%;
+        text-align: start;
+      }
+
+      .end {
+        text-align: end;
+      }
+
+      .start {
+        text-align: start;
+      }
+
+      .strong {
+        font-weight: 700;
+      }
+
+      .flexSpace {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .flexStart {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .flexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header {
+        margin-bottom: 7%;
+      }
+
+      header .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      header h2 {
+        font-weight: 700;
+        margin: 0;
+        font-size: 100%;
+      }
+      header img {
+        margin-right: 5%;
+      }
+
+      .informationStore p {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      .informationStore p {
+        width: 85%;
+        font-size: 85%;
+      }
+
+      .containerTable th {
+        text-align: start;
+        width: 65%;
+      }
+      .containerTable td {
+        text-align: center;
+      }
+      .containerTable tr {
+        line-height: 240%;
+      }
+      .containerTable tr:nth-child(3) {
+        text-align: end;
+      }
+      .containerTable #Item {
+        text-align: start;
+      }
+      .containerTable .productName {
+        text-align: start;
+        font-weight: 700;
+      }
+      .containerTable .productPrice {
+        text-align: end;
+        width: 100%;
+      }
+
+      tr {
+        line-height: 30px;
+      }
+      .clientInfo {
+        margin: 10% 0;
+      }
+
+      .hrPointer {
+        margin: 5% 0;
+        border-top: 1px dotted grey;
+      }
+
+      .hrPointer2 {
+        width: 100%;
+        height: 0;
+        border: medium none;
+        border-top: 1px dashed black !important;
+      }
+
+      .footer {
+        margin-top: 15%;
+        font-size: 85%;
+      }
+
+      .footer tr td {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .firstItems {
+        opacity: 0.5;
+      }
+
+      span {
+        margin-bottom: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <section>
+        <header>
+          <div class="logo">
+            <h2>IN STORE</h2>
+          </div>
+          <p>Table #03 - first floor</p>
+        </header>
+      </section>
+      <!-- Prices -->
+      <section>
+        <div class="containerTable">
+          <table valign="top" width="100%">
+            <tbody>
+              <tr class="firstItems">
+                <td id="Item">Item</td>
+                <td></td>
+                <td class="productPrice">qty</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <hr class="hrPointer2" />
+          <br />
+          <table>
+            <tbody>
+              <div class="containerProduct">
+                <tr>
+                  <th class="productName">
+                    <span>Special lorem ipsum hamburger </span>
+                  </th>
+                  <td></td>
+                  <td class="productPrice strong">3</td>
+                </tr>
+
+                <tr>
+                  <td class="productName">Addition bacon</td>
+                  <td></td>
+                  <td class="productPrice"></td>
+                </tr>
+                <tr>
+                  <td class="productName">Addition cheese</td>
+                </tr>
+              </div>
+              <div class="containerProduct">
+                <tr>
+                  <th class="productName">Chicken kebab plate</th>
+                  <td></td>
+                  <td class="productPrice strong">1</td>
+                </tr>
+
+                <tr>
+                  <td class="productName">Addition cheese</td>
+                </tr>
+              </div>
+              <div class="containerProduct">
+                <tr>
+                  <th class="productName">Heineken 1 lt.</th>
+                  <td></td>
+                  <td class="productPrice strong">2</td>
+                </tr>
+              </div>
+              <div class="containerProduct">
+                <tr>
+                  <th class="productName">Sprite can</th>
+                  <td></td>
+                  <td class="productPrice strong">3</td>
+                </tr>
+                <tr>
+                  <td class="productName">*No ice, natural</td>
+                </tr>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
